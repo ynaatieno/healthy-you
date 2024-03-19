@@ -46,17 +46,3 @@ input{
     margin-top: 2%;
 }
 /* signing */
-.form{
-    justify-content: center;
-    align-items: center;
-display: flex;
-margin-top:10%;
-flex-direction: column;
-}
-.form p{
-    padding-right:20%;
-    
-}
-    
-
-    
