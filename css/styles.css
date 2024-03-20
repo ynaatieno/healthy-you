@@ -13,13 +13,13 @@ display: flex;
 
 
 
-input{
+/* input{
     
     border-radius: 20px;
     box-shadow: 1px 1px solid gray;
     padding: 2em;
     margin-right: 3em;
-}
+} */
 .main{
     font-size:1em;
 }
