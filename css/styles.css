@@ -1,15 +1,13 @@
 *{
     padding: 0;
-    margin: 0;
+    margin:0;
+}
 
-}
-body{
-    /* background-image */
-}
 .nav{
 display: flex; 
   justify-content: space-between;
   margin-top:1.5em;
+  background-color:#eea539;
 
 }
 
@@ -45,4 +43,6 @@ input{
     gap:7em;
     margin-top: 2%;
 }
-/* signing */
+.footer{
+    background-color: #eea539;
+}

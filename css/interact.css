@@ -33,7 +33,7 @@ margin-top: 25rem;
 .input{
     display: flex;
     /* justify-content:space-around; */
-    
+    /* padding: 20px; */
 }
 .input p{
     margin:0 2em;
@@ -42,7 +42,7 @@ margin-top: 25rem;
 .input input{
     margin: 0 2rem 2rem 2rem;
     /* justify-content:space-evenly; */
-
+padding: 20px;
 }
 /* .temp__card{
     background-color: #BCEBD0;
@@ -56,18 +56,39 @@ margin-top: 25rem;
 .nav__items{
     display: flex;
 }
-.nav{
+.nav {
     display: flex;
-    justify-content: space-between;
+
     padding-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    margin-top: 5%;
+}
+.nav  :hover{
+background-color: #eea539;
 }
 .list{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
-
-    
-    
-
+    gap:30em;
+}
+.items{
+    justify-content: center;
+    align-items: center;
+    margin-left:40%;
+    padding-top:5%;
+    /* border-radius: 10px;
+    background-color: #A0E3BE;
+    box-shadow: 2px 2px 1px gray; */
+}
+.nav__items{
+    gap:30em;
+}
+.footer{
+    background-color: #eea539;
+}
+.nav__items{
+    background-color: #eea539;
 }
