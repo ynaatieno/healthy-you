@@ -5,8 +5,8 @@ let weight = document.querySelector(".weight");
 let height = document.querySelector(".height");
 let paragraph = document.querySelector(".error");
 let ranges = document.querySelectorAll(".nav h2");
-let planitems=document.querySelector(".planitems");
-let meals=[];
+let planitems = document.querySelector(".planitems");
+let meals = [];
 
 // let height=document.queryselector(".height")
 // console.log(input)
@@ -15,7 +15,6 @@ let yearRange;
 let category;
 let bmi;
 let mealPlan;
-
 
 ranges.forEach((range) => {
   range.addEventListener("click", (e) => {
@@ -40,20 +39,22 @@ button.addEventListener("click", function () {
       paragraph.textContent = "";
       inputs[i].style.border = "1px solid black";
       inputs[i].previousElementSibling.style.color = "black";
+      console.log("all good");
     }
   }
 
   if (paragraph.textContent === "") {
     calculatebmi();
-    generatePlan()
-
+    generatePlan();
+    updateitems();
+    console.log(mealPlan);
   }
 });
 
 function calculatebmi() {
   const weightvalue = parseInt(weight.value);
   const heightvalue = parseInt(height.value);
-   bmi = parseInt((weightvalue / heightvalue ** 2).toFixed(2));
+  bmi = parseInt((weightvalue / heightvalue ** 2).toFixed(2));
 
   if (bmi <= 29.9 && bmi >= 25) {
     category = "overweight";
@@ -72,9 +73,9 @@ const generatePlan = () => {
       mealPlan = plan[yearRange][category];
     }
   });
-  console.log(category)
-  console.log(bmi)
-  console.log(mealPlan)
+  console.log(category);
+  console.log(bmi);
+  console.log(mealPlan);
 };
 
 const plans = [
@@ -107,32 +108,30 @@ const plans = [
     },
   },
 ];
-function updateitems(){
-const item=document.createElement("div");
-console.log(item)
-meals.forEach((item) =>{
-    item.innerHTML=`
-    <p>Hey, ${name.value}your BMI is recorded and we've customizedthe below meal plan just for you</p>
-    
-    <p class="meals" >${category}</p>
-    
-    `
-})
+function updateitems() {
+  planitems.innerHTML = "";
+  const planContainer = document.createElement("div");
 
-planitems.append(item)
+  planContainer.innerHTML = `
+    <p>Hey, ${name.value} your BMI is ${bmi} and we've customized the below meal plan just for you</p>
+    
+    <p class="meals" >Carbohydrates: ${mealPlan.carbohydrates}</p>
+    <p class="meals" >Carbohydrates: ${mealPlan.proteins}</p>
+    <p class="meals" >Carbohydrates: ${mealPlan.vitamins}</p>
+    
+    `;
+  planitems.append(planContainer);
 }
-planitems.addEventListener("click",function(e){
-    if (e.target.classList.contains("plans")) {
-    e.target.style="display"
-    
-        // console.log("adding items");
-       
-      } else if (e.target.classList.contains("")) {
-        // console.log("removing items");
-    
-        e.target.display="none"
-        
-        }
-})
-    
+// planitems.addEventListener("click",function(e){
+//     if (e.target.classList.contains("plans")) {
+//     e.target.style="display"
 
+//         // console.log("adding items");
+
+//       } else if (e.target.classList.contains("")) {
+//         // console.log("removing items");
+
+//         e.target.display="none"
+
+//         }
+// })
