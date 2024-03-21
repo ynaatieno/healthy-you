@@ -7,6 +7,25 @@
     <link rel="stylesheet" href="css/interact.css">
 </head>
 <body>
+  <div class="container">
+    <div class="bmi">
+    <h1>BMI Calculator</h1>
+
+    <!-- Option for providing height 
+        and weight to the user-->
+    <p>Height (in cm)</p>
+
+    <input type="text" id="height">
+
+    <p>Weight (in kg)</p>
+
+    <input type="text" id="weight">
+
+    <button id="btn">Calculate</button>
+
+    <div id="result"></div>
+    </div>
+</div>
     <div class="container">
         <nav>
             <div class="nav__items">
@@ -15,8 +34,8 @@
               </div>
             <div class="list">
             <h2><a href="/index.html">home</a></h2>
-            <h2><a href="/signing.html">signing</a></h2>
-            <h2><a href="/interact.html">interact</a></h2>
+            <!-- <h2><a href="/signing.html">signing</a></h2> -->
+            <!-- <h2><a href="/interact.html">interact</a></h2> -->
             </div>
             </div>
         </nav>
@@ -31,29 +50,28 @@
         </div>
         </div>
         <div class="container">
+          <p class="error"></p>
         <form>
             <div class="items">
                 <div class="input">
                     <p>Name:</p>
-                    <input type="Enter" placeholder="Enter your Name">
+                    <input type="Enter" class="name bmiInput" placeholder="Enter your Name">
                 </div>
-               <div class="input">
-                <p>Age:</p>
-                <input type="Enter" placeholder="Enter your Age">
-               </div>
+              
                <div class="input">
                 <p>Weight:</p>
-                <input type="Enter" placeholder="Enter your Weight">
+                <input type="Enter" class="weight bmiInput" placeholder="Enter your Weight in kilograms">
                </div>
                <div class="input">
                 <p>Height:</p>
-                <input type="Enter" placeholder="Enter your Height">
+                <input type="Enter" class="height bmiInput" placeholder="Enter your Height in meters">
                </div>
                
             </div>
+            
 
         </form>
-        <button>Generate plans</button>
+        <button class="plans">Generate plans</button>
         </div>
         <footer>
             <div class="footer">
@@ -62,7 +80,10 @@
                     <h4 style="color: #eea539">Home</h4>
                     <h4>About Us</h4>
                     <h4>Shop</h4>
-                    <h4>Contact US</h4>
+                    <h4>Contact US:0712345698</h4>
+                    <img src="images/facebook.png"width="50px">
+                    <img src="images/instagram.png"width="50px">
+                    <img src="images/twitter.png"width="50px">
                   </div>
                   <div class="footer__right">
                     <p class="footer__right__paragraph" style="font-size: 30px">
@@ -71,7 +92,7 @@
                     </p>
                     <form class="footer__right__container">
                       <div class="footer__form">
-                        <input type="subscribe" placeholder="Email address" />
+                        
                         <button class="btn__subscribe">subscribe</button>
                       </div>
                     </div>

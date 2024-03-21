@@ -77,11 +77,12 @@ background-color: #eea539;
 .items{
     justify-content: center;
     align-items: center;
-    margin-left:40%;
+    margin-left:30%;
     padding-top:5%;
-    /* border-radius: 10px;
-    background-color: #A0E3BE;
-    box-shadow: 2px 2px 1px gray; */
+     border-radius: 20px;
+    background-color:#eea539;
+    box-shadow: 2px 2px 1px 1px gray; 
+    margin-right: 30%;
 }
 .nav__items{
     gap:30em;
@@ -91,4 +92,30 @@ background-color: #eea539;
 }
 .nav__items{
     background-color: #eea539;
+}
+.plans{
+    padding: 20px;
+      border-radius: 10px; 
+    
+    box-shadow: 2px 2px 1px gray; 
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    background-color:#eea539;
+}
+.bmi{
+    display: none;
+}
+.input{
+    justify-content: center;
+    align-items: center;
+    margin-left:5%;
+}
+.error{
+    color: red;
+    font-weight: bold;
+    margin:1em 0;
+    text-align: center;
 }
