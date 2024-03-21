@@ -55,7 +55,7 @@
     padding: 20px;
 }
 .form p{
-    font-size:1em;
+    font-size:2em;
 }
 .footer{
     background-color: #eea539;
@@ -68,4 +68,9 @@
     color: white;
     margin-bottom: 5%;
 }
-    
+   .form{
+    background-color: #eea539;
+   } 
+   input{
+    padding: 20px;
+   }
