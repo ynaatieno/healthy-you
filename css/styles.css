@@ -10,7 +10,9 @@ display: flex;
   background-color:#eea539;
 
 }
-
+body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../images/bowl.jpg")no-repeat center center/cover;
+}
 
 
 input{ 
@@ -28,7 +30,7 @@ input{
     justify-content: center;
     align-items: center;
     margin-left:50% ;
-    margin-top:5%;
+    margin-top:20%;
 }
 .images{
     display: flex;
@@ -47,5 +49,10 @@ input{
     background-color: #eea539;
 }
 .p{
+    color: white;
     font-size: 2em;
+    text-align: center;
+}
+.footer{
+    margin-top: 30%;
 }
